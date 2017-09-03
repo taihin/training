@@ -15,7 +15,7 @@ public class chrome {
 
 		driver.get("http://www.google.nl");
 
-		Thread.sleep(6000);
+		//Thread.sleep(5000);
 		//driver.quit();
 	}
 
