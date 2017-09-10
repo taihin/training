@@ -16,7 +16,7 @@ public class Ex23GoogleXPath {
 
 		driver.get("http://www.google.nl");
 		
-		System.out.println("Successfully opened the website http://www.google.nl" + "\nUsing XPath"); // Print a message to the screen
+		System.out.println("--- Successfully opened the website http://www.google.nl" + "\nUsing XPath"); // Print a message to the screen
 		
 		//use id to find input element
 		WebElement input = driver.findElement(By.xpath("//input[@id='lst-ib']"));
@@ -30,6 +30,7 @@ public class Ex23GoogleXPath {
 		
 		Thread.sleep(5000);
 		driver.quit();
+		System.out.println("--- End."); // Print a message to the screen
 	}
 
 }
