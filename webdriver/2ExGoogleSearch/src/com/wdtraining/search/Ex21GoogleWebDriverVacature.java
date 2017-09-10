@@ -16,7 +16,7 @@ public class Ex21GoogleWebDriverVacature {
 
 		driver.get("http://www.google.nl");
 		
-		System.out.println("Successfully opened the website http://www.google.nl"); // Print a message to the screen
+		System.out.println("--- Successfully opened the website http://www.google.nl"); // Print a message to the screen
 		
 		//use id to find input element
 		WebElement input = driver.findElement(By.id("lst-ib"));
@@ -30,6 +30,8 @@ public class Ex21GoogleWebDriverVacature {
 		
 		Thread.sleep(5000);
 		driver.quit();
+		System.out.println("--- End."); // Print a message to the screen
+		
 	}
 
 }

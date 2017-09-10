@@ -11,10 +11,11 @@ public class chrome {
 		WebDriver driver = new ChromeDriver(); // Create a new instance of the Chrome driver
 
 		driver.get("http://www.google.nl");
-		
 		System.out.println("Successfully opened the website http://www.google.nl"); // Print a message to the screen
+
 		Thread.sleep(5000);
 		driver.quit();
+		System.out.println("----- End"); // Print a message 
 	}
 
 }
