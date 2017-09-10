@@ -15,5 +15,6 @@ public class Firefox {
 
 		Thread.sleep(5000);
 		driver.quit();
+		System.out.println("----- End");
 	}
 }

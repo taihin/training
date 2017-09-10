@@ -17,7 +17,7 @@ public class Ex24Google_findElements {
 
 		driver.get("http://www.google.nl");
 
-		System.out.println("Successfully opened the website http://www.google.nl" + "\nUsing XPath"); // Print a message
+		System.out.println("--- Successfully opened the website http://www.google.nl" + "\nUsing XPath"); // Print a message
 																										// to the screen
 
 		// use id to find input element
@@ -37,5 +37,6 @@ public class Ex24Google_findElements {
 
 		Thread.sleep(5000);
 		driver.quit();
+		System.out.println("--- End."); // Print a message to the screen
 	}
 }

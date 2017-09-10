@@ -2,6 +2,7 @@ package proxy;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class IE {
 
@@ -10,7 +11,9 @@ public class IE {
 		System.setProperty("ie.driver.loglevel","INFO");
 		System.setProperty("webdriver.ie.driver.logfile","C:\\temp\\IEServerlog.log");
 		
-		WebDriver driver = new InternetExplorerDriver(); // Create a new instance of the FF driver
+		DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
+		caps.setCapability("ignoreZoomSetting", true);
+		WebDriver driver = new InternetExplorerDriver(caps); // Create a new instance of the FF driver, use caps to avoid Exception 
 
 		driver.get("http://www.google.nl"); // Launch the Google Website
 
@@ -18,8 +21,8 @@ public class IE {
 		Thread.sleep(5000);
 
 		//driver.close();
-		//driver.quit(); // Not working ! Bug!
-
+		driver.quit(); // Not working ! Bug!
+		System.out.println("----- End");
 
 	}
 }
