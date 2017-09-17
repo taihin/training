@@ -1,9 +1,5 @@
 package com.wdtraining.search;
-import java.util.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Ex24Google_findElements {
@@ -21,18 +17,12 @@ public class Ex24Google_findElements {
 																										// to the screen
 
 		// use id to find input element
-		WebElement input = driver.findElement(By.xpath("//input[@id='lst-ib']"));
-		input.sendKeys("WebDriver vacature");
+
 
 		// use name to find the button element
-		WebElement btnGoogleZoeken = driver.findElement(By.xpath("//input[@name='q']"));
-		// btnGoogleZoeken.click(); // Exception other Element will receive the click
-		btnGoogleZoeken.sendKeys(Keys.ENTER);
 	
 	
-		// find a list of web element, which indicates the result
-		List <WebElement> results = driver.findElements(By.xpath("//*[@id='rso']//h3/a"));
-		System.out.println("Number of results: " + results.size()); // Print a message
+		// find a list of web element, which indicates the result. Print the nr of found results on the screen
 
 
 		Thread.sleep(5000);

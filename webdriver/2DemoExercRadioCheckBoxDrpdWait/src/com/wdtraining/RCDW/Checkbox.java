@@ -25,9 +25,8 @@ public class Checkbox {
 		Thread.sleep(3000);// Using Thread.Sleep in test is bad practice, here only for Demo purpose
 
 		// Click on checkbox "Stuur mij een bevestiging van deze aanvraag per e-mail"
-		WebElement chkbStuurBevestEmail = driver.findElement(By.id("qfs_IF6624_19264_checkbox"));
-		chkbStuurBevestEmail.click();
-
+		
+		
 		Thread.sleep(5000); // this sleep is for information purpose
 		driver.quit();
 

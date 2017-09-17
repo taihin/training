@@ -1,13 +1,9 @@
 package com.wdtraining.RCDW;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Wait {
 	public static void main(String[] args) throws InterruptedException {
@@ -24,9 +20,10 @@ public class Wait {
 		lnkKlantenservice.click();
 		
 		//Thread.sleep(1000);
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		wait.until(d -> d.findElement(By.linkText("Ik wil mijn product retourneren.")) != null );
+		//WebDriverWait wait = new WebDriverWait(driver, 10);
+		//wait.until(d -> d.findElement(By.linkText("Ik wil mijn product retourneren.")) != null );
 
+		//Click on link "Ik Wil Mijn Product Retourneren"
 		WebElement lnkIkWilMijnProductRetourneren =  driver.findElement(By.linkText("Ik wil mijn product retourneren."));
 		lnkIkWilMijnProductRetourneren.click();
 

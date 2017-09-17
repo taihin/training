@@ -24,8 +24,7 @@ public class RadioButton {
 		Thread.sleep(3000);// Using Thread.Sleep in test is bad practice, here only for Demo purpose
 
 		// Click on radio button to select 
-		WebElement rBtnMevrouw = driver.findElement(By.xpath("//span[text()='Mevrouw']"));
-		rBtnMevrouw.click();
+		
 		
 		Thread.sleep(5000); // this sleep is for information purpose
 		driver.quit();
